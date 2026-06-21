@@ -68,6 +68,11 @@ export default function Sidebar() {
                     <MdSettings className="text-lg flex-shrink-0" />
                     <span>Settings</span>
                 </NavLink>
+                <a href="/store" target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-teal-600 hover:bg-teal-50 font-semibold transition-all">
+                    <span className="text-lg">🏪</span>
+                    <span>Lihat Toko</span>
+                </a>
 
                 {/* User card */}
                 <div className="flex items-center gap-2 px-3 py-3 border-t border-gray-100 mt-1">

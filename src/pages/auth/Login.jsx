@@ -19,11 +19,16 @@ export default function Login() {
         e.preventDefault();
         setLoading(true);
         setError("");
-        axios.post("https://dummyjson.com/user/login", {
+        axios.post("https://dummyjson.com/auth/login", {
             username: dataForm.email,
             password: dataForm.password,
         })
-        .then(res => { if (res.status === 200) navigate("/"); })
+        .then(res => {
+            if (res.status === 200) {
+                localStorage.setItem("accessToken", res.data.accessToken);
+                navigate("/");
+            }
+        })
         .catch(err => setError(err.response?.data?.message || err.message || "Login gagal"))
         .finally(() => setLoading(false));
     };
