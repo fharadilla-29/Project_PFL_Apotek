@@ -1,0 +1,505 @@
+[
+  {
+    "id": 1,
+    "name": "Komodo National Park",
+    "description": "Destinasi terkenal dengan naga komodo legendaris dan pemandangan alam yang menakjubkan.",
+    "category": "Alam & Satwa Liar",
+    "rating": 4.8,
+    "image": "/img/Destinasi-1.jpg",
+    "location": {
+      "city": "Labuan Bajo",
+      "province": "Nusa Tenggara Timur",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Resort bintang 5",
+      "dining": "Restoran internasional",
+      "activities": ["Trekking", "Menyelam", "Jelajahi pulau"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "$10 USD",
+      "contact": "+62-385-123-456"
+    },
+    "visitorsPerYear": 250000,
+    "tags": ["Petualangan", "Situs UNESCO", "Naga"]
+  },
+  {
+    "id": 2,
+    "name": "Mount Bromo",
+    "description": "Gunung berapi aktif dengan pemandangan matahari terbit spektakuler dan lanskap yang aneh.",
+    "category": "Pegunungan",
+    "rating": 4.7,
+    "image":  "/img/Destinasi-2.jpg",
+
+    "location": {
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah pegunungan",
+      "dining": "Restoran lokal",
+      "activities": ["Mendaki", "Fotografi", "Tur jeep"]
+    },
+    "visitInfo": {
+      "openingHours": "5:00 AM - 5:00 PM",
+      "entryFee": "$3 USD",
+      "contact": "+62-341-555-789"
+    },
+    "visitorsPerYear": 300000,
+    "tags": ["Mendaki", "Fotografi", "Matahari terbit"]
+  },
+  {
+    "id": 3,
+    "name": "Bali Beaches",
+    "description": "Pantai tropis murni dengan air kristal jernih dan pasir putih.",
+    "category": "Pantai",
+    "rating": 4.9,
+    "image": "/img/Destinasi-3.jpg",
+    "location": {
+      "city": "Denpasar",
+      "province": "Bali",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Resort pantai",
+      "dining": "Klub pantai",
+      "activities": ["Berenang", "Selancar", "Voli pantai"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "Gratis",
+      "contact": "+62-361-234-567"
+    },
+    "visitorsPerYear": 1000000,
+    "tags": ["Pantai", "Tropis", "Relaksasi"]
+  },
+  {
+    "id": 4,
+    "name": "Gili Islands",
+    "description": "Kepulauan surga tropis sempurna untuk petualangan menyelam dan snorkeling.",
+    "category": "Pulau",
+    "rating": 4.8,
+    "image": "/img/Destinasi-4.jpg",
+    "location": {
+      "city": "Lombok",
+      "province": "Nusa Tenggara Barat",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah tepi pantai",
+      "dining": "Restoran makanan laut",
+      "activities": ["Snorkeling", "Menyelam", "Tur pulau"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "5 USD",
+      "contact": "+62-370-612-345"
+    },
+    "visitorsPerYear": 500000,
+    "tags": ["Menyelam", "Snorkeling", "Pulau"]
+  },
+  {
+    "id": 5,
+    "name": "Borobudur Temple",
+    "description": "Candi Buddha kuno, Situs Warisan Dunia UNESCO dengan pemandangan yang menakjubkan.",
+    "category": "Bersejarah",
+    "rating": 4.9,
+    "image": "/img/Destinasi-5.jpg",
+
+    "location": {
+      "city": "Magelang",
+      "province": "Jawa Tengah",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Hotel terdekat",
+      "dining": "Kafe",
+      "activities": ["Tur candi", "Fotografi", "Meditasi"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 5:00 PM",
+      "entryFee": "18 USD",
+      "contact": "+62-293-123-456"
+    },
+    "visitorsPerYear": 600000,
+    "tags": ["UNESCO", "Candi", "Sejarah"]
+  },
+  {
+    "id": 6,
+    "name": "Lake Toba",
+    "description": "Danau vulkanik terbesar di dunia dengan keindahan alam yang menakjubkan.",
+    "category": "Danau",
+    "rating": 4.6,
+    "image": "/img/Destinasi-6.jpg",
+
+    "location": {
+      "city": "Medan",
+      "province": "Sumatera Utara",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Resort danau",
+      "dining": "Restoran tradisional",
+      "activities": ["Tur perahu", "Berenang", "Jelajahi pulau"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "Gratis",
+      "contact": "+62-625-111-222"
+    },
+    "visitorsPerYear": 400000,
+    "tags": ["Danau", "Alam", "Fotografi"]
+  },
+  {
+    "id": 7,
+    "name": "Palau Belitung",
+    "description": "Pulau-pulau indah dengan pantai pristine dan formasi batu granit unik.",
+    "category": "Pantai",
+    "rating": 4.7,
+    "image": "/img/Destinasi-1.jpg",
+    "location": {
+      "city": "Belitung",
+      "province": "Kepulauan Bangka Belitung",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Hotel pantai",
+      "dining": "Spesialisasi makanan laut",
+      "activities": ["Snorkeling", "Tur pulau", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "3 USD",
+      "contact": "+62-719-234-567"
+    },
+    "visitorsPerYear": 350000,
+    "tags": ["Pantai", "Pulau", "Batu granit"]
+  },
+  {
+    "id": 8,
+    "name": "Yogyakarta City",
+    "description": "Jantung budaya Jawa dengan sejarah kaya, seni, dan kerajinan tradisional.",
+    "category": "Kota",
+    "rating": 4.8,
+    "image": "/img/Destinasi-2.jpg",
+    "location": {
+      "city": "Yogyakarta",
+      "province": "Daerah Istimewa Yogyakarta",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Hotel budget hingga mewah",
+      "dining": "Warung makanan lokal",
+      "activities": ["Tur candi", "Galeri seni", "Lokakarya batik"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "Bervariasi",
+      "contact": "+62-274-567-890"
+    },
+    "visitorsPerYear": 800000,
+    "tags": ["Budaya", "Seni", "Sejarah"]
+  },
+  {
+    "id": 9,
+    "name": "Camel Safari Desert",
+    "description": "Alami petualangan gurun dengan naik unta tradisional dan pemandangan matahari terbenam.",
+    "category": "Petualangan",
+    "rating": 4.5,
+    "image": "/img/Destinasi-3.jpg",
+    "location": {
+      "city": "Jimbaran",
+      "province": "Bali",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Kamp gurun",
+      "dining": "Makanan Bedouin",
+      "activities": ["Naik unta", "Tur matahari terbenam", "Pengamatan bintang"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 6:00 PM",
+      "entryFee": "25 USD",
+      "contact": "+62-361-888-999"
+    },
+    "visitorsPerYear": 200000,
+    "tags": ["Petualangan", "Matahari terbenam", "Fotografi"]
+  },
+  {
+    "id": 10,
+    "name": "Ubud Rainforest",
+    "description": "Hutan hujan tropis yang subur dengan jalur trekking dan pertemuan satwa liar.",
+    "category": "Alam & Satwa Liar",
+    "rating": 4.7,
+    "image": "/img/Destinasi-4.jpg",
+    "location": {
+      "city": "Ubud",
+      "province": "Bali",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah hutan",
+      "dining": "Restoran ramah lingkungan",
+      "activities": ["Trekking hutan", "Pengamatan satwa liar", "Pengamatan burung"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 6:00 PM",
+      "entryFee": "8 USD",
+      "contact": "+62-361-973-456"
+    },
+    "visitorsPerYear": 750000,
+    "tags": ["Hutan", "Trekking", "Satwa liar"]
+  },
+  {
+    "id": 11,
+    "name": "Prambanan Temple",
+    "description": "Kompleks candi Hindu dengan arsitektur megah dan signifikansi budaya.",
+    "category": "Bersejarah",
+    "rating": 4.8,
+    "image": "/img/Destinasi-5.jpg",
+    "location": {
+      "city": "Yogyakarta",
+      "province": "Daerah Istimewa Yogyakarta",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Hotel terdekat",
+      "dining": "Restoran lokal",
+      "activities": ["Tur candi", "Pertunjukan tari", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 5:00 PM",
+      "entryFee": "15 USD",
+      "contact": "+62-274-456-789"
+    },
+    "visitorsPerYear": 550000,
+    "tags": ["UNESCO", "Candi", "Budaya"]
+  },
+  {
+    "id": 12,
+    "name": "Kawah Ijen Volcano",
+    "description": "Gunung berapi unik dengan api belerang biru dan danau kawah.",
+    "category": "Pegunungan",
+    "rating": 4.9,
+    "image": "/img/Destinasi-6.jpg",
+    "location": {
+      "city": "Banyuwangi",
+      "province": "Jawa Timur",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah pegunungan",
+      "dining": "Makanan lokal",
+      "activities": ["Trekking malam", "Fotografi", "Api biru"]
+    },
+    "visitInfo": {
+      "openingHours": "5:00 PM - 7:00 AM",
+      "entryFee": "5 USD",
+      "contact": "+62-333-234-567"
+    },
+    "visitorsPerYear": 280000,
+    "tags": ["Gunung berapi", "Pendakian malam", "Api biru"]
+  },
+  {
+    "id": 13,
+    "name": "Raja Ampat Islands",
+    "description": "Pusat keanekaragaman hayati dengan menyelam dan snorkeling kelas dunia.",
+    "category": "Pulau",
+    "rating": 5.0,
+    "image": "/img/Destinasi-1.jpg",
+    "location": {
+      "city": "Sorong",
+      "province": "Papua Barat",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Resort menyelam",
+      "dining": "Restoran pulau",
+      "activities": ["Menyelam SCUBA", "Snorkeling", "Tur pulau"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "1000 IDR",
+      "contact": "+62-951-123-456"
+    },
+    "visitorsPerYear": 180000,
+    "tags": ["Menyelam", "Snorkeling", "Keanekaragaman hayati"]
+  },
+  {
+    "id": 14,
+    "name": "Semeru Mountain",
+    "description": "Gunung tertinggi di Jawa dengan jalur trekking yang menantang.",
+    "category": "Pegunungan",
+    "rating": 4.6,
+    "image": "/img/Destinasi-2.jpg",
+    "location": {
+      "city": "Lumajang",
+      "province": "Jawa Timur",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Kamp pegunungan",
+      "dining": "Makanan dasar",
+      "activities": ["Trekking", "Pendakian puncak", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "gratis",
+      "contact": "+62-334-111-222"
+    },
+    "visitorsPerYear": 150000,
+    "tags": ["Pendakian gunung", "Trekking", "Tantangan"]
+  },
+  {
+    "id": 15,
+    "name": "Baluran National Park",
+    "description": "Taman yang luas dengan savana, satwa liar, dan pemandangan panorama.",
+    "category": "Alam & Satwa Liar",
+    "rating": 4.5,
+    "image": "/img/Destinasi-3.jpg",
+    "location": {
+      "city": "Banyuwangi",
+      "province": "Jawa Timur",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah taman",
+      "dining": "Restoran dasar",
+      "activities": ["Safari", "Trekking", "Pengamatan satwa liar"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 5:00 PM",
+      "entryFee": "10 USD",
+      "contact": "+62-333-555-666"
+    },
+    "visitorsPerYear": 120000,
+    "tags": ["Safari", "Satwa liar", "Alam"]
+  },
+  {
+    "id": 16,
+    "name": "Lombok Waterfalls",
+    "description": "Serangkaian air terjun indah dikelilingi oleh penghijauan yang subur.",
+    "category": "Alam & Satwa Liar",
+    "rating": 4.7,
+    "image": "/img/Destinasi-4.jpg",
+    "location": {
+      "city": "Lombok",
+      "province": "Nusa Tenggara Barat",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah terdekat",
+      "dining": "Restoran pinggir jalan",
+      "activities": ["Trekking air terjun", "Berenang", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 6:00 PM",
+      "entryFee": "2 USD",
+      "contact": "+62-370-789-012"
+    },
+    "visitorsPerYear": 220000,
+    "tags": ["Air terjun", "Trekking", "Berenang"]
+  },
+  {
+    "id": 17,
+    "name": "Banten Old City",
+    "description": "Kota pelabuhan bersejarah dengan arsitektur kolonial Belanda dan warisan yang kaya.",
+    "category": "Bersejarah",
+    "rating": 4.4,
+    "image": "/img/Destinasi-5.jpg",
+    "location": {
+      "city": "Serang",
+      "province": "Banten",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Hotel kolonial",
+      "dining": "Restoran warisan",
+      "activities": ["Tur warisan", "Kunjungan museum", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "9:00 AM - 4:00 PM",
+      "entryFee": "5 USD",
+      "contact": "+62-254-234-567"
+    },
+    "visitorsPerYear": 100000,
+    "tags": ["Sejarah", "Kolonial", "Warisan"]
+  },
+  {
+    "id": 18,
+    "name": "Tanjung Puting National Park",
+    "description": "Santuari orangutan di hutan hujan Borneo dengan pariwisata yang bertanggung jawab.",
+    "category": "Alam & Satwa Liar",
+    "rating": 4.8,
+    "image": "/img/Destinasi-6.jpg",
+    "location": {
+      "city": "Palangkaraya",
+      "province": "Kalimantan Tengah",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Rumah tepi sungai",
+      "dining": "Makanan tradisional",
+      "activities": ["Tur orangutan", "Trekking hutan", "Jelajahi sungai"]
+    },
+    "visitInfo": {
+      "openingHours": "6:00 AM - 6:00 PM",
+      "entryFee": "30 USD",
+      "contact": "+62-536-123-456"
+    },
+    "visitorsPerYear": 180000,
+    "tags": ["Satwa liar", "Orangutan", "Hutan hujan"]
+  },
+  {
+    "id": 19,
+    "name": "Tanah Lot Temple",
+    "description": "Candi ikonik yang terletak di formasi batu di laut.",
+    "category": "Bersejarah",
+    "rating": 4.8,
+    "image": "/img/Destinasi-1.jpg",
+    "location": {
+      "city": "Tabanan",
+      "province": "Bali",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Resort tebing",
+      "dining": "Restoran pemandangan laut",
+      "activities": ["Tur candi", "Melihat matahari terbenam", "Fotografi"]
+    },
+    "visitInfo": {
+      "openingHours": "7:00 AM - 7:00 PM",
+      "entryFee": "30 USD",
+      "contact": "+62-361-815-408"
+    },
+    "visitorsPerYear": 900000,
+    "tags": ["Candi", "Matahari terbenam", "Ikonik"]
+  },
+  {
+    "id": 20,
+    "name": "Rinjani Mountain",
+    "description": "Gunung suci dengan danau kawah dan trekking multi-hari yang menantang.",
+    "category": "Pegunungan",
+    "rating": 4.9,
+    "image": "/img/Destinasi-2.jpg",
+    "location": {
+      "city": "Lombok",
+      "province": "Nusa Tenggara Barat",
+      "country": "Indonesia"
+    },
+    "facilities": {
+      "accommodation": "Kamp pegunungan",
+      "dining": "Makanan jalur",
+      "activities": ["Trekking multi-hari", "Danau kawah", "Matahari terbit"]
+    },
+    "visitInfo": {
+      "openingHours": "24/7",
+      "entryFee": "5 USD",
+      "contact": "+62-370-634-345"
+    },
+    "visitorsPerYear": 350000,
+    "tags": ["Pendakian gunung", "Kawah", "Trek"]
+  }
+]

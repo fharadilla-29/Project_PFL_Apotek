@@ -1,0 +1,176 @@
+[
+  {
+    "id": "MEM-001", "customerId": "CUS-001", "name": "Andi Saputra",
+    "phone": "081234567890", "whatsapp": "081234567890",
+    "email": "andi@email.com", "birthdate": "1990-03-15",
+    "address": "Jl. Merdeka No. 12, Jakarta",
+    "tier": "Platinum", "points": 8450, "pointsExpiry": "2024-12-31",
+    "joinDate": "2022-03-15", "tierExpiry": "2026-03-15",
+    "annualSpend": 7200000, "totalSpend": 18400000, "totalOrders": 54,
+    "lastTransaction": "2024-06-10", "status": "Active",
+    "tags": ["Diabetes", "Hipertensi"],
+    "pointHistory": [
+      {"date":"2024-06-10","desc":"Pembelian Metformin","earned":72,"used":0,"balance":8450},
+      {"date":"2024-05-22","desc":"Penukaran Voucher","earned":0,"used":200,"balance":8378},
+      {"date":"2024-05-15","desc":"Pembelian Insulin","earned":150,"used":0,"balance":8578},
+      {"date":"2024-04-03","desc":"Birthday Bonus","earned":500,"used":0,"balance":8428}
+    ]
+  },
+  {
+    "id": "MEM-002", "customerId": "CUS-004", "name": "Dian Pratama",
+    "phone": "081234567893", "whatsapp": "081234567893",
+    "email": "dian@email.com", "birthdate": "1985-07-20",
+    "address": "Jl. Sudirman No. 45, Bandung",
+    "tier": "Platinum", "points": 6920, "pointsExpiry": "2024-12-31",
+    "joinDate": "2022-07-20", "tierExpiry": "2026-07-20",
+    "annualSpend": 5800000, "totalSpend": 12800000, "totalOrders": 38,
+    "lastTransaction": "2024-06-08", "status": "Active",
+    "tags": ["Hipertensi", "Vitamin Bulanan"],
+    "pointHistory": [
+      {"date":"2024-06-08","desc":"Pembelian Lisinopril","earned":60,"used":0,"balance":6920},
+      {"date":"2024-05-30","desc":"Pembelian Vitamin C","earned":45,"used":0,"balance":6860}
+    ]
+  },
+  {
+    "id": "MEM-003", "customerId": "CUS-007", "name": "Gita Lestari",
+    "phone": "081234567896", "whatsapp": "081234567896",
+    "email": "gita@email.com", "birthdate": "1992-11-05",
+    "address": "Jl. Pahlawan No. 8, Surabaya",
+    "tier": "Gold", "points": 3100, "pointsExpiry": "2024-12-31",
+    "joinDate": "2021-11-05", "tierExpiry": "2025-11-05",
+    "annualSpend": 2800000, "totalSpend": 9200000, "totalOrders": 27,
+    "lastTransaction": "2024-06-01", "status": "Active",
+    "tags": ["Ibu & Anak", "Vitamin Bulanan"],
+    "pointHistory": [
+      {"date":"2024-06-01","desc":"Pembelian Vitamin D","earned":45,"used":0,"balance":3100},
+      {"date":"2024-05-12","desc":"Penukaran Diskon","earned":0,"used":100,"balance":3055}
+    ]
+  },
+  {
+    "id": "MEM-004", "customerId": "CUS-010", "name": "Joko Susilo",
+    "phone": "081234567899", "whatsapp": "081234567899",
+    "email": "joko@email.com", "birthdate": "1988-01-10",
+    "address": "Jl. Diponegoro No. 22, Semarang",
+    "tier": "Gold", "points": 1950, "pointsExpiry": "2024-12-31",
+    "joinDate": "2023-01-10", "tierExpiry": "2026-01-10",
+    "annualSpend": 1800000, "totalSpend": 4600000, "totalOrders": 15,
+    "lastTransaction": "2024-05-28", "status": "Active",
+    "tags": ["Diabetes"],
+    "pointHistory": [
+      {"date":"2024-05-28","desc":"Pembelian Glibenclamide","earned":55,"used":0,"balance":1950}
+    ]
+  },
+  {
+    "id": "MEM-005", "customerId": "CUS-013", "name": "Maya Anggraini",
+    "phone": "081234567802", "whatsapp": "081234567802",
+    "email": "maya@email.com", "birthdate": "1995-06-22",
+    "address": "Jl. Ahmad Yani No. 3, Yogyakarta",
+    "tier": "Gold", "points": 2200, "pointsExpiry": "2024-12-31",
+    "joinDate": "2023-06-22", "tierExpiry": "2026-06-22",
+    "annualSpend": 2100000, "totalSpend": 5100000, "totalOrders": 19,
+    "lastTransaction": "2024-06-05", "status": "Active",
+    "tags": ["Vitamin Bulanan"],
+    "pointHistory": [
+      {"date":"2024-06-05","desc":"Pembelian Suplemen","earned":80,"used":0,"balance":2200},
+      {"date":"2024-06-05","desc":"Birthday Bonus","earned":300,"used":0,"balance":2120}
+    ]
+  },
+  {
+    "id": "MEM-006", "customerId": "CUS-002", "name": "Budi Santoso",
+    "phone": "081234567891", "whatsapp": "081234567891",
+    "email": "budi@email.com", "birthdate": "1991-04-18",
+    "address": "Jl. Gatot Subroto No. 17, Medan",
+    "tier": "Silver", "points": 1250, "pointsExpiry": "2024-12-31",
+    "joinDate": "2023-04-18", "tierExpiry": "2025-04-18",
+    "annualSpend": 1100000, "totalSpend": 2400000, "totalOrders": 10,
+    "lastTransaction": "2024-05-20", "status": "Active",
+    "tags": ["Hipertensi"],
+    "pointHistory": [
+      {"date":"2024-05-20","desc":"Pembelian Amlodipin","earned":35,"used":0,"balance":1250}
+    ]
+  },
+  {
+    "id": "MEM-007", "customerId": "CUS-005", "name": "Eka Putri",
+    "phone": "081234567894", "whatsapp": "081234567894",
+    "email": "eka@email.com", "birthdate": "1993-12-01",
+    "address": "Jl. Veteran No. 9, Malang",
+    "tier": "Silver", "points": 980, "pointsExpiry": "2024-12-31",
+    "joinDate": "2023-12-01", "tierExpiry": "2025-06-01",
+    "annualSpend": 800000, "totalSpend": 1800000, "totalOrders": 8,
+    "lastTransaction": "2024-04-15", "status": "Expiring",
+    "tags": ["Ibu & Anak"],
+    "pointHistory": [
+      {"date":"2024-04-15","desc":"Pembelian Paracetamol Anak","earned":20,"used":0,"balance":980}
+    ]
+  },
+  {
+    "id": "MEM-008", "customerId": "CUS-008", "name": "Hendra Wijaya",
+    "phone": "081234567897", "whatsapp": "081234567897",
+    "email": "hendra@email.com", "birthdate": "1987-09-30",
+    "address": "Jl. Imam Bonjol No. 5, Makassar",
+    "tier": "Silver", "points": 1450, "pointsExpiry": "2024-12-31",
+    "joinDate": "2023-09-30", "tierExpiry": "2026-09-30",
+    "annualSpend": 1600000, "totalSpend": 3200000, "totalOrders": 12,
+    "lastTransaction": "2024-06-03", "status": "Active",
+    "tags": ["Diabetes", "Vitamin Bulanan"],
+    "pointHistory": [
+      {"date":"2024-06-03","desc":"Pembelian Metformin","earned":40,"used":0,"balance":1450}
+    ]
+  },
+  {
+    "id": "MEM-009", "customerId": "CUS-003", "name": "Citra Dewi",
+    "phone": "081234567892", "whatsapp": "081234567892",
+    "email": "citra@email.com", "birthdate": "1997-02-14",
+    "address": "Jl. Raya Bogor No. 31, Bogor",
+    "tier": "Silver", "points": 560, "pointsExpiry": "2024-12-31",
+    "joinDate": "2024-01-14", "tierExpiry": "2025-01-14",
+    "annualSpend": 600000, "totalSpend": 1200000, "totalOrders": 5,
+    "lastTransaction": "2024-05-10", "status": "Active",
+    "tags": [],
+    "pointHistory": [
+      {"date":"2024-05-10","desc":"Pembelian Antasida","earned":15,"used":0,"balance":560}
+    ]
+  },
+  {
+    "id": "MEM-010", "customerId": "CUS-006", "name": "Fajar Nugroho",
+    "phone": "081234567895", "whatsapp": "081234567895",
+    "email": "fajar@email.com", "birthdate": "1994-08-07",
+    "address": "Jl. Pemuda No. 14, Bekasi",
+    "tier": "Silver", "points": 320, "pointsExpiry": "2024-12-31",
+    "joinDate": "2024-03-07", "tierExpiry": "2025-03-07",
+    "annualSpend": 400000, "totalSpend": 750000, "totalOrders": 4,
+    "lastTransaction": "2024-04-22", "status": "Active",
+    "tags": [],
+    "pointHistory": [
+      {"date":"2024-04-22","desc":"Pembelian OTC","earned":12,"used":0,"balance":320},
+      {"date":"2024-03-07","desc":"Bonus Daftar Baru","earned":50,"used":0,"balance":308}
+    ]
+  },
+  {
+    "id": "MEM-011", "customerId": "CUS-009", "name": "Indah Permata",
+    "phone": "081234567898", "whatsapp": "081234567898",
+    "email": "indah@email.com", "birthdate": "1996-05-09",
+    "address": "Jl. Cempaka No. 7, Tangerang",
+    "tier": "Silver", "points": 180, "pointsExpiry": "2024-12-31",
+    "joinDate": "2024-05-09", "tierExpiry": "2025-05-09",
+    "annualSpend": 200000, "totalSpend": 320000, "totalOrders": 2,
+    "lastTransaction": "2024-05-20", "status": "Active",
+    "tags": ["Vitamin Bulanan"],
+    "pointHistory": [
+      {"date":"2024-05-20","desc":"Pembelian Vitamin","earned":20,"used":0,"balance":180},
+      {"date":"2024-05-09","desc":"Bonus Daftar Baru","earned":50,"used":0,"balance":160}
+    ]
+  },
+  {
+    "id": "MEM-012", "customerId": "CUS-017", "name": "Qori Hidayat",
+    "phone": "081234567806", "whatsapp": "081234567806",
+    "email": "qori@email.com", "birthdate": "1989-10-03",
+    "address": "Jl. Raya Depok No. 20, Depok",
+    "tier": "Silver", "points": 0, "pointsExpiry": "2023-12-31",
+    "joinDate": "2023-10-03", "tierExpiry": "2024-10-03",
+    "annualSpend": 0, "totalSpend": 500000, "totalOrders": 4,
+    "lastTransaction": "2023-12-15", "status": "Expired",
+    "tags": [],
+    "pointHistory": []
+  }
+]

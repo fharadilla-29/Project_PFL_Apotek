@@ -1,0 +1,29 @@
+[
+  {
+    "id": "MENU-001",
+    "name": "Espresso",
+    "category": "Kopi",
+    "price": 35000,
+    "description": "Kopi pekat berkualitas tinggi dengan crema kaya",
+    "image": "☕",
+    "available": true
+  },
+  {
+    "id": "MENU-002",
+    "name": "Cappuccino",
+    "category": "Kopi",
+    "price": 55000,
+    "description": "Espresso dengan susu hangat dan busa susu lembut",
+    "image": "🥛",
+    "available": true
+  },
+  {
+    "id": "MENU-003",
+    "name": "Croissant Butter",
+    "category": "Makanan",
+    "price": 45000,
+    "description": "Pastry lezat berlapis dengan mentega premium",
+    "image": "🥐",
+    "available": true
+  }
+]

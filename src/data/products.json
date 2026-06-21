@@ -1,0 +1,242 @@
+[
+  {
+    "tittle": "Laptop ASUS VivoBook 15",
+    "code": "PRD-001",
+    "category": "Electronics",
+    "brand": "ASUS",
+    "price": 8500000,
+    "stock": 15
+  },
+  {
+    "tittle": "Smartphone Samsung Galaxy A53",
+    "code": "PRD-002",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 5200000,
+    "stock": 32
+  },
+  {
+    "tittle": "Headphones Sony WH-CH720",
+    "code": "PRD-003",
+    "category": "Audio",
+    "brand": "Sony",
+    "price": 1200000,
+    "stock": 45
+  },
+  {
+    "tittle": "Monitor LG 24 Inch FHD",
+    "code": "PRD-004",
+    "category": "Electronics",
+    "brand": "LG",
+    "price": 1800000,
+    "stock": 22
+  },
+  {
+    "tittle": "Keyboard Mechanical RGB",
+    "code": "PRD-005",
+    "category": "Accessories",
+    "brand": "Corsair",
+    "price": 950000,
+    "stock": 28
+  },
+  {
+    "tittle": "Mouse Logitech MX Master 3",
+    "code": "PRD-006",
+    "category": "Accessories",
+    "brand": "Logitech",
+    "price": 1100000,
+    "stock": 35
+  },
+  {
+    "tittle": "Webcam HD 1080p",
+    "code": "PRD-007",
+    "category": "Accessories",
+    "brand": "Razer",
+    "price": 850000,
+    "stock": 20
+  },
+  {
+    "tittle": "USB-C Hub 7 in 1",
+    "code": "PRD-008",
+    "category": "Accessories",
+    "brand": "Anker",
+    "price": 450000,
+    "stock": 55
+  },
+  {
+    "tittle": "Tablet iPad Air 5",
+    "code": "PRD-009",
+    "category": "Electronics",
+    "brand": "Apple",
+    "price": 9200000,
+    "stock": 12
+  },
+  {
+    "tittle": "Smartwatch Apple Watch Series 8",
+    "code": "PRD-010",
+    "category": "Wearables",
+    "brand": "Apple",
+    "price": 5500000,
+    "stock": 18
+  },
+  {
+    "tittle": "Powerbank 20000mAh",
+    "code": "PRD-011",
+    "category": "Accessories",
+    "brand": "Anker",
+    "price": 350000,
+    "stock": 80
+  },
+  {
+    "tittle": "Charger Fast 65W USB-C",
+    "code": "PRD-012",
+    "category": "Accessories",
+    "brand": "Baseus",
+    "price": 280000,
+    "stock": 60
+  },
+  {
+    "tittle": "SSD NVMe 1TB Samsung 980",
+    "code": "PRD-013",
+    "category": "Storage",
+    "brand": "Samsung",
+    "price": 1100000,
+    "stock": 25
+  },
+  {
+    "tittle": "RAM 16GB DDR4 3200MHz",
+    "code": "PRD-014",
+    "category": "Hardware",
+    "brand": "Corsair",
+    "price": 820000,
+    "stock": 40
+  },
+  {
+    "tittle": "Graphics Card RTX 3060 Ti",
+    "code": "PRD-015",
+    "category": "Hardware",
+    "brand": "NVIDIA",
+    "price": 5800000,
+    "stock": 8
+  },
+  {
+    "tittle": "Processor Intel Core i7 12700K",
+    "code": "PRD-016",
+    "category": "Hardware",
+    "brand": "Intel",
+    "price": 4200000,
+    "stock": 16
+  },
+  {
+    "tittle": "Motherboard ASUS ROG STRIX",
+    "code": "PRD-017",
+    "category": "Hardware",
+    "brand": "ASUS",
+    "price": 2800000,
+    "stock": 11
+  },
+  {
+    "tittle": "Power Supply 850W 80+ Gold",
+    "code": "PRD-018",
+    "category": "Hardware",
+    "brand": "Corsair",
+    "price": 1500000,
+    "stock": 19
+  },
+  {
+    "tittle": "CPU Cooler Noctua NH-D15",
+    "code": "PRD-019",
+    "category": "Hardware",
+    "brand": "Noctua",
+    "price": 950000,
+    "stock": 14
+  },
+  {
+    "tittle": "Case PC Corsair 5000D",
+    "code": "PRD-020",
+    "category": "Hardware",
+    "brand": "Corsair",
+    "price": 1800000,
+    "stock": 10
+  },
+  {
+    "tittle": "Monitor 27 Inch 144Hz Gaming",
+    "code": "PRD-021",
+    "category": "Electronics",
+    "brand": "ASUS",
+    "price": 3200000,
+    "stock": 13
+  },
+  {
+    "tittle": "Desk Gaming Adjustable Height",
+    "code": "PRD-022",
+    "category": "Furniture",
+    "brand": "Secretlab",
+    "price": 4500000,
+    "stock": 7
+  },
+  {
+    "tittle": "Gaming Chair Pro",
+    "code": "PRD-023",
+    "category": "Furniture",
+    "brand": "Herman Miller",
+    "price": 5200000,
+    "stock": 6
+  },
+  {
+    "tittle": "LED Strip RGB 5 Meter",
+    "code": "PRD-024",
+    "category": "Lighting",
+    "brand": "Nanoleaf",
+    "price": 680000,
+    "stock": 42
+  },
+  {
+    "tittle": "Desk Lamp LED Smart",
+    "code": "PRD-025",
+    "category": "Lighting",
+    "brand": "Xiaomi",
+    "price": 380000,
+    "stock": 50
+  },
+  {
+    "tittle": "Cable HDMI 2.1 8K Premium",
+    "code": "PRD-026",
+    "category": "Cables",
+    "brand": "Belkin",
+    "price": 320000,
+    "stock": 70
+  },
+  {
+    "tittle": "Cable USB-C Braided 2 Meter",
+    "code": "PRD-027",
+    "category": "Cables",
+    "brand": "Anker",
+    "price": 180000,
+    "stock": 95
+  },
+  {
+    "tittle": "Webcam Streaming 4K",
+    "code": "PRD-028",
+    "category": "Accessories",
+    "brand": "Elgato",
+    "price": 2100000,
+    "stock": 9
+  },
+  {
+    "tittle": "Microphone Studio Condenser",
+    "code": "PRD-029",
+    "category": "Audio",
+    "brand": "Audio-Technica",
+    "price": 1800000,
+    "stock": 17
+  },
+  {
+    "tittle": "Monitor Arm Dual Mount",
+    "code": "PRD-030",
+    "category": "Accessories",
+    "brand": "Ergotron",
+    "price": 1200000,
+    "stock": 23
+  }
+]
