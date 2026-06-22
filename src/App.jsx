@@ -16,9 +16,10 @@ import Loading      from "./components/Loading";
 import Components   from "./pages/Components";
 import FiturXYZ     from "./pages/main/FiturXyz";
 import Note         from "./pages/main/Note";
-import StoreFront    from "./guest/pages/StoreFront";
-import StoreProducts from "./guest/pages/StoreProducts";
-import GuestLogin    from "./guest/pages/GuestLogin";
+import StoreFront      from "./guest/pages/StoreFront";
+import StoreProducts   from "./guest/pages/StoreProducts";
+import StoreMembership from "./guest/pages/StoreMembership";
+import GuestLogin      from "./guest/pages/GuestLogin";
 
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
 
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/store/products"      element={<StoreProducts />} />
         <Route path="/store/offers"        element={<StoreProducts />} />
         <Route path="/store/category/:cat" element={<StoreProducts />} />
+        <Route path="/store/membership"    element={<StoreMembership />} />
       </Route>
 
       {/* Guest Login — full page, tanpa navbar store maupun sidebar admin */}
