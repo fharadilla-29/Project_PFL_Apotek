@@ -14,7 +14,7 @@ import ErrorPage    from "./pages/ErrorPage";
 import Login        from "./pages/auth/Login";
 import Loading      from "./components/Loading";
 import Components   from "./pages/Components";
-import FiturXYZ     from "./pages/main/FiturXYZ";
+import FiturXYZ     from "./pages/main/FiturXyz";
 import Note         from "./pages/main/Note";
 import StoreFront    from "./guest/pages/StoreFront";
 import StoreProducts from "./guest/pages/StoreProducts";
