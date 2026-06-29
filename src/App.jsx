@@ -6,6 +6,7 @@ import GuestLayout  from "./guest/layouts/GuestLayout";
 import Dashboard    from "./pages/Dashboard";
 import Customers    from "./pages/Customers";
 import Orders       from "./pages/Orders";
+import OrderDetail  from "./pages/OrderDetail";
 import Products     from "./pages/Products";
 import Produk       from "./pages/Produk";
 import Inventory    from "./pages/Inventory";
@@ -16,10 +17,13 @@ import Loading      from "./components/Loading";
 import Components   from "./pages/Components";
 import FiturXYZ     from "./pages/main/FiturXyz";
 import Note         from "./pages/main/Note";
-import StoreFront      from "./guest/pages/StoreFront";
-import StoreProducts   from "./guest/pages/StoreProducts";
-import StoreMembership from "./guest/pages/StoreMembership";
-import GuestLogin      from "./guest/pages/GuestLogin";
+import StoreFront        from "./guest/pages/StoreFront";
+import StoreProducts     from "./guest/pages/StoreProducts";
+import StoreMembership   from "./guest/pages/StoreMembership";
+import StoreOrders       from "./guest/pages/StoreOrders";
+import StoreTransactions from "./guest/pages/StoreTransactions";
+import StoreProfile      from "./guest/pages/StoreProfile";
+import GuestLogin        from "./guest/pages/GuestLogin";
 
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
 
@@ -33,6 +37,9 @@ export default function App() {
         <Route path="/store/offers"        element={<StoreProducts />} />
         <Route path="/store/category/:cat" element={<StoreProducts />} />
         <Route path="/store/membership"    element={<StoreMembership />} />
+        <Route path="/store/orders"        element={<StoreOrders />} />
+        <Route path="/store/transactions"  element={<StoreTransactions />} />
+        <Route path="/store/profile"       element={<StoreProfile />} />
       </Route>
 
       {/* Guest Login — full page, tanpa navbar store maupun sidebar admin */}
@@ -47,6 +54,7 @@ export default function App() {
       <Route element={<MainLayout />}>
         <Route path="/"           element={<Dashboard />} />
         <Route path="/orders"     element={<Orders />} />
+        <Route path="/orders/:id"  element={<OrderDetail />} />
         <Route path="/customers"  element={<Customers />} />
         <Route path="/products"   element={<Products />} />
         <Route path="/inventory"  element={<Inventory />} />
