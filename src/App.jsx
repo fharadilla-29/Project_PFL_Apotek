@@ -19,6 +19,8 @@ import FiturXYZ     from "./pages/main/FiturXyz";
 import Note         from "./pages/main/Note";
 import StoreFront        from "./guest/pages/StoreFront";
 import StoreProducts     from "./guest/pages/StoreProducts";
+import StoreCart         from "./guest/pages/StoreCart";
+import StoreCheckout     from "./guest/pages/StoreCheckout";
 import StoreMembership   from "./guest/pages/StoreMembership";
 import StoreOrders       from "./guest/pages/StoreOrders";
 import StoreTransactions from "./guest/pages/StoreTransactions";
@@ -34,6 +36,8 @@ export default function App() {
       <Route element={<GuestLayout />}>
         <Route path="/store"               element={<StoreFront />} />
         <Route path="/store/products"      element={<StoreProducts />} />
+        <Route path="/store/cart"          element={<StoreCart />} />
+        <Route path="/store/checkout"      element={<StoreCheckout />} />
         <Route path="/store/offers"        element={<StoreProducts />} />
         <Route path="/store/category/:cat" element={<StoreProducts />} />
         <Route path="/store/membership"    element={<StoreMembership />} />

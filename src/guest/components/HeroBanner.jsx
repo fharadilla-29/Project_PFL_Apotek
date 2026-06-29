@@ -1,17 +1,13 @@
 import { useState, useEffect } from "react";
 import { MdArrowForward, MdArrowBack } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useLang } from "../context/LangContext";
 
-const SLIDES = [
+// Visual config kept here; text comes from LangContext (t.hero)
+const SLIDE_STYLE = [
   {
-    id: 1,
-    tag:      "New Collection 2026",
-    title:    "Your Daily Wellness,\nDelivered Smarter",
-    subtitle: "Authentic pharmacy, beauty and wellness products all in one trusted place.",
-    cta:      "Shop Now",
-    ctaLink:  "/store/products",
-    cta2:     "Explore Categories",
-    bg:       "from-teal-600 to-teal-800",
+    ctaLink: "/store/products",
+    bg:      "from-teal-600 to-teal-800",
     images: [
       "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=180&h=220&fit=crop",
       "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=180&h=220&fit=crop",
@@ -19,14 +15,8 @@ const SLIDES = [
     ],
   },
   {
-    id: 2,
-    tag:      "Featured Deals",
-    title:    "Up To 25% Off\nSelected Products",
-    subtitle: "Limited time offers on your favourite pharmacy & wellness brands.",
-    cta:      "View Offers",
-    ctaLink:  "/store/offers",
-    cta2:     "All Products",
-    bg:       "from-purple-600 to-purple-800",
+    ctaLink: "/store/offers",
+    bg:      "from-purple-600 to-purple-800",
     images: [
       "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=180&h=220&fit=crop",
       "https://images.unsplash.com/photo-1550572017-edd951b55104?w=180&h=220&fit=crop",
@@ -36,7 +26,9 @@ const SLIDES = [
 ];
 
 export default function HeroBanner() {
+  const { t } = useLang();
   const [idx, setIdx] = useState(0);
+  const SLIDES = t.hero.map((s, i) => ({ ...s, ...SLIDE_STYLE[i] }));
   const slide = SLIDES[idx];
 
   useEffect(() => {
@@ -59,7 +51,7 @@ export default function HeroBanner() {
               <span key={i}>{line}{i === 0 && <br />}</span>
             ))}
           </h1>
-          <p className="text-white/80 text-sm mb-5 leading-relaxed">{slide.subtitle}</p>
+          <p className="text-white text-sm mb-5 leading-relaxed">{slide.subtitle}</p>
           <div className="flex gap-3">
             <Link to={slide.ctaLink}
               className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
@@ -72,14 +64,16 @@ export default function HeroBanner() {
           </div>
         </div>
 
-        {/* Product images */}
-        <div className="hidden md:flex items-end gap-3 flex-shrink-0">
+                {/* Product images */}
+        <div className="hidden md:flex items-end gap-3 flex-shrink-0 pr-2">
           {slide.images.map((img, i) => (
-            <img key={i} src={img} alt=""
-              className={`object-cover rounded-xl shadow-lg transition-all duration-500 ${
-                i === 1 ? "h-52 w-32" : "h-40 w-28"
-              }`}
-            />
+            <div key={i} className="bg-white/10 p-1.5 rounded-2xl backdrop-blur-sm">
+              <img src={img} alt=""
+                className={`object-cover rounded-xl shadow-xl shadow-black/20 ring-1 ring-white/20 transition-all duration-500 ${
+                  i === 1 ? "h-52 w-32" : "h-40 w-28"
+                }`}
+              />
+            </div>
           ))}
         </div>
       </div>

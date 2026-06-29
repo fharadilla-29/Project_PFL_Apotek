@@ -35,7 +35,7 @@ export default function Products() {
           onClick={() => setIsModalOpen(true)}
           className="flex items-center gap-1.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-bold px-4 py-2 rounded-lg shadow transition-all"
         >
-          <MdAdd /> + Add Product
+          <MdAdd /> Add Product
         </button>
       </div>
 

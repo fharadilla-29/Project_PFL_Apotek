@@ -12,26 +12,49 @@ import { ordersAPI } from "../services/ordersAPI";
 
 // ── Config ─────────────────────────────────────────────────────────────────────
 const STATUS_CFG = {
-  Completed: {
-    bg: "bg-green-100", text: "text-green-700", border: "border-green-200",
-    dot: "bg-green-500", ring: "ring-green-400",
-  },
   Pending: {
     bg: "bg-yellow-100", text: "text-yellow-700", border: "border-yellow-200",
-    dot: "bg-yellow-400", ring: "ring-yellow-400",
+    dot: "bg-yellow-400", ring: "ring-yellow-400", label: "Pending",
+  },
+  Processing: {
+    bg: "bg-blue-100", text: "text-blue-700", border: "border-blue-200",
+    dot: "bg-blue-400", ring: "ring-blue-400", label: "Diproses",
+  },
+  Shipped: {
+    bg: "bg-indigo-100", text: "text-indigo-700", border: "border-indigo-200",
+    dot: "bg-indigo-400", ring: "ring-indigo-400", label: "Dikirim",
+  },
+  Completed: {
+    bg: "bg-green-100", text: "text-green-700", border: "border-green-200",
+    dot: "bg-green-500", ring: "ring-green-400", label: "Selesai",
   },
   Cancelled: {
     bg: "bg-red-100", text: "text-red-600", border: "border-red-200",
-    dot: "bg-red-500", ring: "ring-red-400",
+    dot: "bg-red-500", ring: "ring-red-400", label: "Dibatalkan",
   },
 };
+
+// Alur status: Pending → Processing → Shipped → Completed
+const STATUS_FLOW = ["Pending", "Processing", "Shipped", "Completed"];
+
+// Label tombol untuk memajukan ke status berikutnya
+const NEXT_ACTION = {
+  Pending:    "Terima Pesanan",
+  Processing: "Kirim Pesanan",
+  Shipped:    "Selesaikan",
+};
+
+function nextStatus(status) {
+  const i = STATUS_FLOW.indexOf(status);
+  return i >= 0 && i < STATUS_FLOW.length - 1 ? STATUS_FLOW[i + 1] : null;
+}
 
 function StatusBadge({ status }) {
   const c = STATUS_CFG[status] ?? STATUS_CFG.Pending;
   return (
     <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold border ${c.bg} ${c.text} ${c.border}`}>
       <span className={`w-1.5 h-1.5 rounded-full ${c.dot}`} />
-      {status}
+      {c.label ?? status}
     </span>
   );
 }
@@ -130,6 +153,22 @@ export default function Orders() {
       setError(msg);
     } finally {
       setSaving(false);
+    }
+  };
+
+  // Majukan status order ke tahap berikutnya & simpan ke Supabase
+  const handleAdvanceStatus = async (order) => {
+    const next = nextStatus(order.status);
+    if (!next) return;
+    // Optimistic update
+    setOrders(prev => prev.map(o => o.id === order.id ? { ...o, status: next } : o));
+    try {
+      await ordersAPI.updateOrder(order.id, { status: next });
+      showToast(`✅ ${order.id} → ${STATUS_CFG[next]?.label ?? next}`);
+    } catch {
+      // Rollback bila gagal
+      setOrders(prev => prev.map(o => o.id === order.id ? { ...o, status: order.status } : o));
+      showToast("⚠️ Gagal memperbarui status");
     }
   };
 
@@ -245,7 +284,7 @@ export default function Orders() {
             }}
             className="flex items-center gap-1.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-bold px-4 py-2 rounded-lg shadow transition-all"
           >
-            <MdAdd /> + Add Order
+            <MdAdd /> Add Order
           </button>
         </div>
       </div>

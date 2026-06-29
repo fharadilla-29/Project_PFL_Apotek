@@ -1,4 +1,4 @@
-// Konteks bahasa global untuk halaman toko (Guest/Store)
+   // Konteks bahasa global untuk halaman toko (Guest/Store)
 import { createContext, useContext, useState } from "react";
 
 const LangContext = createContext(null);
@@ -21,6 +21,23 @@ export const T = {
     logout:          "Sign Out",
     // Mobile menu
     offers:          "Offers & Discounts",
+    // Hero banner slides
+    hero: [
+      {
+        tag:      "New Collection 2026",
+        title:    "Your Daily Wellness,\nDelivered Smarter",
+        subtitle: "Authentic pharmacy, beauty and wellness products all in one trusted place.",
+        cta:      "Shop Now",
+        cta2:     "Explore Categories",
+      },
+      {
+        tag:      "Featured Deals",
+        title:    "Up To 25% Off\nSelected Products",
+        subtitle: "Limited time offers on your favourite pharmacy & wellness brands.",
+        cta:      "View Offers",
+        cta2:     "All Products",
+      },
+    ],
     // Categories
     categories: [
       "Vitamins & Supplements", "Beauty", "Skin Care",
@@ -73,6 +90,23 @@ export const T = {
     logout:          "Keluar dari Akun",
     // Mobile menu
     offers:          "Penawaran & Diskon",
+    // Hero banner slides
+    hero: [
+      {
+        tag:      "Koleksi Baru 2026",
+        title:    "Kesehatan Harianmu,\nDiantar Lebih Cerdas",
+        subtitle: "Produk farmasi, kecantikan, dan kesehatan terpercaya, lengkap dalam satu tempat.",
+        cta:      "Belanja Sekarang",
+        cta2:     "Jelajahi Kategori",
+      },
+      {
+        tag:      "Penawaran Pilihan",
+        title:    "Diskon Hingga 25%\nuntuk Produk Pilihan",
+        subtitle: "Penawaran waktu terbatas untuk brand farmasi & kesehatan favoritmu.",
+        cta:      "Lihat Penawaran",
+        cta2:     "Semua Produk",
+      },
+    ],
     // Categories
     categories: [
       "Vitamin & Suplemen", "Kecantikan", "Perawatan Kulit",
@@ -113,7 +147,7 @@ export const T = {
 
 export function LangProvider({ children }) {
   const [lang, setLang] = useState(
-    () => localStorage.getItem("store_lang") || "en"
+    () => localStorage.getItem("store_lang") || "id"
   );
 
   const switchLang = (l) => {

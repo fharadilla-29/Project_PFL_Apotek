@@ -10,6 +10,7 @@ import { BsStarFill } from "react-icons/bs";
 import { RiMedicineBottleLine } from "react-icons/ri";
 import { useAuth } from "../context/AuthContext";
 import { useLang } from "../context/LangContext";
+import { useCart } from "../context/CartContext";
 
 const TIER_COLOR = {
   Platinum: "text-purple-600 bg-purple-100",
@@ -25,6 +26,7 @@ const LANG_OPTIONS = [
 export default function GuestNavbar() {
   const { user, logout, memberData }  = useAuth();
   const { lang, switchLang, t }       = useLang();
+  const { count: cartCount }          = useCart();
   const [search, setSearch]           = useState("");
   const [mobileOpen, setOpen]         = useState(false);
   const [userOpen, setUser]           = useState(false);
@@ -58,9 +60,6 @@ export default function GuestNavbar() {
   };
 
   const currentLang = LANG_OPTIONS.find(l => l.code === lang) ?? LANG_OPTIONS[0];
-
-  // Cart count (mock)
-  const cartCount = user ? 3 : 0;
 
   return (
     <header className="w-full sticky top-0 z-50">

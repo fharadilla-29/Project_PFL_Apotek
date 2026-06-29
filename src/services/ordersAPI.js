@@ -38,4 +38,16 @@ export const ordersAPI = {
         })
         return (response.data || []).map(toClient)
     },
+
+    // Perbarui sebagian field order (mis. status) berdasarkan id
+    async updateOrder(id, fields) {
+        const payload = {}
+        if (fields.status !== undefined)       payload.status = fields.status
+        if (fields.customerName !== undefined) payload.customer_name = fields.customerName
+        if (fields.totalPrice !== undefined)   payload.total_price = fields.totalPrice
+        const response = await axios.patch(`${API_URL}?id=eq.${id}`, payload, {
+            headers: { ...headers, Prefer: "return=representation" },
+        })
+        return (response.data || []).map(toClient)
+    },
 }

@@ -2,19 +2,22 @@ import { useState } from "react";
 import { MdShoppingCart, MdFavoriteBorder, MdFavorite, MdStar } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useCart } from "../context/CartContext";
 
 export default function ProductCard({ product }) {
   const { user }  = useAuth();
+  const { addItem } = useCart();
   const navigate  = useNavigate();
   const [fav, setFav]     = useState(false);
   const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
-    if (!user) {
+        if (!user) {
       // Belum login — redirect ke halaman login, simpan tujuan kembali
       navigate("/store/login", { state: { from: window.location.pathname } });
       return;
     }
+    addItem(product, 1);
     setAdded(true);
     setTimeout(() => setAdded(false), 1800);
   };
